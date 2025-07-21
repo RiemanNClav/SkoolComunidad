@@ -1,0 +1,21 @@
+Cualquier proyecto de Git constará de tres secciones. 
+1. El directorio de Git: contiene el historial de todos los archivos y cambios 
+2. el Arbol de trabajo: contiene el estado actual del proyecto, incluyendo cualquier cambio que se haya realizado. 
+3. El area de ensayo: contiene los cambios que se han marcado para ser incluidos en la proximación confirmación. 
+
+Cuando operamos con Git los archivos pueden ser rastreados o no rastreados. 
+Los archivos rastreados son parte de las instantáneas 
+Los archivos sin seguimiento no son parte de las instantaneas todavia. 
+Cada archivo de pista puede estar en uno de los tres estados principales: modificado, por etapas o comprometido. 
+Modificado: Significa que hemos realizado cambios en el que aun no hemos cometido, los cambios podrian ser agregar,modificar o eliminar el contenido del archivo. 
+El siguiente paso es poner en escena esos cambios: los archivos se convierten en archivos de etapa, los cambios es esos proyectos estan listos para ser 
+comprometidos con el proyecto. 
+cuando un archivo se compromete: los cambios realizados en el, se almacenas de forma segura en una instantanea en el directorio de Git. 
+
+ls-l: para comprobar el contenido del arbol de trabajo actual. 
+estado actual de los archivos : git status
+
+Cada repositorio tendra un directorio de trabajo, un arbol de trabajo y un area de ensayo, 
+
+* git log: para mostrar mensajes de confirmación, hará cualquier ajuste de línea por nosotros.
+

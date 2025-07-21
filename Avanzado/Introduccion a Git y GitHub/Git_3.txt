@@ -1,0 +1,28 @@
+
+
+
+
+Para revertir otros commit mas atras en el tiempo, podemos apuntar a una confirmación especifica mediante el uso de su ID de confirmación. 
+*git revert  'ID'
+
+
+BRANCHING AND MERGING 
+Que es Branch: Una rama en el nivel mas basico, es solo un puntero a una confirmación particular, representan una linea independiente de desarrollo en un proyecto
+ la rama por default cuando se inicializa el repo es 'master', solo hasta que el codigo este listo podremos fucionar esos cambios a la rama master.
+
+* git branch: para listar,crear,eliminar y manipular ramas, mostrará todas las ramas en su repositorio. 
+* git branch 'Name_new_branch': para crear nuevas ramas. 
+
+para cambiar a una nueva rama:
+* git checkout 'name_new_branch'
+* git checkout -b 'name_new_branch': crear y te cambia de rama directamente 
+* git branch -d 'name_new_branch': elimina una branch.
+
+fusionar una rama separada de nuevo en el tronco principal del codigo:
+Merge: Combinar datos de rama e historial juntos
+* git merge: permite tomar las instantaneas independientes y el historial de una rama de Git y enredarlas en otra. 
+
+
+
+
+

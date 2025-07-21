@@ -1,0 +1,8 @@
+numpy ##Librería para cálculos numéricos eficientes y manejo de arreglos multidimensionales.
+pandas ## Herramienta potente para análisis y manipulación de datos estructurados en Python.
+ipykernel ##Núcleo que permite ejecutar código Python en notebooks como Jupyter.
+flask ##Microframework ligero para crear aplicaciones web en Python.
+
+from sympy import FiniteSet
+from matplotlib_venn import venn2, venn3, venn2_circles, venn3_circles
+import matplotlib.pyplot as plt

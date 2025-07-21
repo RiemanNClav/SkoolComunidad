@@ -1,0 +1,62 @@
+WORKING WITH REMOTES 
+
+¿Que es GITHUB? Sistema de Control de Versiones distribuido. 
+git clone link_repo: copias localmente nuestro repo remoto. 
+git push: Recopilará todas las instantaneas que hemos tomado para enviarlar al 
+repositorio remoto. 
+git pull: comando que usamos para recuperar nuevos cambios del repositorio
+
+¿Que es remoto?
+Los repositorios remotos son una gran parte de la naturaleza distribuida de la 
+colaboración de Git. Cuando se necesita compartir sus cambios puede emitir 
+comandos git para extrael código de un repo remoto o intertar código en uno.
+
+Cuando llamamos a un clone de git para obtener una copia local, git configura ese
+repo remoto con el nombre de origen predeterminado. 
+Podemos ver la config para ese remoto ejecutando *git remote -v
+ 1 URL: Recupera datos del repo remoto 
+ 2 URL: Envia datos a ese repo remoto
+ 
+Los repositorios remotos tienen un nombre asignado a ellos, de forma predeterminada, 
+el nombre asignado es 'origen', esto permite rastreae mas de un control remoto 
+en el mismo directorio de Git
+
+¿Que son las branch remotas?
+cada que se opera con controles remotos, git usa ramas remotas, para mantener copias
+de los datos almacenados en el repo remoto.
+
+*git remote show origin: 
+* git branch -r:para ver las ramas remotas que nuestro repo de Git esta rastreanmdo actualmente. 
+
+'your branch is up to date with origin/master' : nos dice que nuestra rama está actualizada con la rama original/maestra
+lo que dice que la rama maestra en el reo remoto llamado origen, tiene los mismos commits que la rama maestra local. 
+
+* git fetch: Para sincronizar los datos, este comando copia las confirmaciones realizadas 
+en el repo remoto a las sucursales remotas, para ver lo que otras personas han comprometido. 
+
+* git log origin/master: Historial de commits remotos.
+
+* git remote origin/master:Fusiona los cambios de la rama maestro del repo remoto 
+en la sucursal local
+ACTUALIZAR EL REPO LOCAL
+* git pull: Obtendrá la copia remota de la rama actual e intentará fusionarla 
+automaticamente en la rama loca actual. 
+* git log -p -1: Para ver los cambios, lo que esta en verde es lo que se ha agregado.
+
+
+
+¿Que pasaria si cuando vamos a impulsar nuestros cambios, hay nuevos cambios en el repo remoto?
+* git log --graph --oneline --all: para ver el arbol de commits en todas las ramas, 
+este grafico muestra los diferentes commits y posiciones en el árbol. 
+
+Otra ventaja de trabajar en ramas separadas es que se puede incluso lanzar dos o mas versiones 
+del mismo arbol, uno es la version estable y la otra la beta
+
+MEJORES PRACTICAS DE COLABORACIÓN 
+Es una buena idea siempre sincronizar las ramas antes de comenzar culaquier trabajo por su cuenta.
+cada que cambies de código sabrás que estas empezando desde la versión mas reciente 
+* Siempre hacer cambios lo mas pequeños posibles
+
+
+
+

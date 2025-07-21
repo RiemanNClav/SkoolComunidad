@@ -1,0 +1,22 @@
+para decirle a Git quien sómos usamos "git config" : git config --global user.email "me@example.com"
+# git config --global user.email "myexplample.com"
+- para crear un repositorio desde cero, usamos "git init" o usar "git clone" para clonar un repositorio que ya existe en otro lugar. 
+
+empezaremos creando un directorio y dentro un repositorio de git. 
+* mkdir checks
+* cd checks
+podemos comprobar que el directorio existe usando: 
+* ls -;la
+
+para mirar dentro del repostorio de git y ver las muchas cosas diferentes que contiene, llamado "directorio Git".
+pensado como una base de datos para el proyecto Git que almacena los cambios y el historial de cambios
+* ls-l.git/
+
+Para llenar nuestro arbol de trabajo y que sea rastreado por Git usamos: git add, de esta manera hemos añadido nuestro archivo al área de puesta en escena. 
+El area puesta en escena: Archivo mantenido por Git que contiene toda la información acerca de qué archivos y cambios van a entrar en su siguiente comando.
+
+* git status: para obtener información sobre el area de trabajo actual y cambios pendientes. 
+* git commit: con esto le decimos a Git que queremos guardar nuestros cambios, los textos que se reciben nos dicen que necesitamos escribir un mensaje de 
+confirmación y que el cambio a ser comprometido es el nuevo archivo que hemos añadido
+
+

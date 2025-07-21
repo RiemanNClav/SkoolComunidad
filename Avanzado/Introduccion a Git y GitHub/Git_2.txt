@@ -1,0 +1,65 @@
+# Git : Sistema de Control de Versiones, herramienta para poder tener un historial completo de todo el codigo que se ha desarrollado. 
+La forma correcta es hacer un rollback entre versiones. 
+Sistema Centralizado: independiente en cada cambios
+Git trabaja de forma descentralizada: Todos los cambios estan descentralizados, 
+Usos de Git: 
+- Historial
+- Almacenar Codigo
+- Trabajar en Equipo 
+- Cuando se Introdujo un error en una aplicación
+
+* git --version: saber que version de git tenemos instalada. 
+* git config --global : Sirve para que la configuración sirva de manera global y no por proyecto. (Configuración Inicial)
+EJEM: git config --global user.name "Nicolas Schurman"   
+      git config --global user.email nicolas@gmail.com
+
+*git config --global core.editor: Configurar el editor de texto
+EJEM: git --global core.editor 'code --wait'
+
+*ls : listar archivos y carpetas dentro de un directorio. 
+* pwd: donde nos encontramos, ruta del directorio actual. 
+* cd: Para movernos entre carpetas. 
+* cd .. : se sale del directorio y vuelve uno atras en la jerarquia. 
+* mkdir: crear un directorio. 
+* git init: Inicializar un repositorio vacio en git completamente vacio dentro de la ruta ya trabajada. 
+            .git/ el punto nos indica que ese directorio se encuentra oculto, 
+
+* ls -a: el -a nos muestra todo, los archivos/directorios que estan ocultos y todo.
+* cd .git - > ls -a : aparecen todos los archivos que se utilizan en Git para poder gestionar los proyectos - Implentación donde se van almacenar las versiones de
+                      codigo, las ramas, los commit, todo, etc. 
+
+* git add: Seleccionar los archivos que queremos pasar a una etapa que se llama Stage y de esta manera verificar todos los cambios que queremos pasar al repo, 
+           en Stage no quiere decir que se verá reflejada en el repo, etapa intermedia para posterior pasar al repo, solo los cambios que nosotros seleccionemos. 
+
+* git commit: Pasamos los archivos de Stage a Commit, los cambios que hayamos comprometido los vamos a poder pasar a un servidor que se encuentre en la nube. 
+
+* git status: nos muestra el estado actual del repositorio, 'Untracked files' archivos que git no esta siguiendo, nosotros los debemos de seleccionar con git add. 
+
+Para comprometer: commit: existen dos foras:
+* git commit -m 'Mensaje con sentido' 
+
+alternativa a Git Status mas eficiente: 
+* Git status -s: 
+
+Como ver los cambios que hemos hecho:
+git status
+git diff
+
+* git log: Revisar el historial de todo el repositorio, nombre de la persona, correo, los commit.
+* git log --oneline: muestra el historial de los commit
+
+verificar la rama en la que nos encontramos:
+* git branch: main-> rama principal, rama por defecto, 
+* git checkout -b nombre_rama : cambiar de rama, realizando cambios sobre los archivos. 
+
+para traer los cambios de nomnre_rama a rama_main, dado que no se han actualizado. 
+* git merge nombre_rama: con esto se actualizan las modificaciones. 
+
+Como tomar todo el codigo con el que hemos trabajado y subirlo a la nube, utilizando GitHub.
+ 
+* git remote: Nos sirve para poder indicar si es que vamos a tener un servidor remoto, donde vamos a subir nuestros cambios. 
+* add origin: Indicando de donde tenemos que ir a obtener el codigo y adonde tenemos que subir los cambios que realizemos, 
+* git push -u origin main: comando para que nosotros podamos subir nuestros cambios, los cuales van a hacer respecto a la rama la cual nosotros estemos trabajando
+
+
+

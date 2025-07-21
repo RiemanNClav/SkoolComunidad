@@ -1,0 +1,15 @@
+Exposicion de los comandos de linux mas basicos y como conectar los flujos de entrada y salida 
+a archivos u otros programas. 
+aprenderemos lo basico del lenguaje Bash, condicionales, bucles
+echo = imprimir mensajes en la pantalla. 
+cat = muestra el contenido de los archivos. 
+ls = comando para enumerar los contenidos en un directorio. 
+chmod = comando para cambiar los permisos de un archivo. 
+mkdir = crea un nuevo directorio. 
+cd = cambiar el directorio. 
+pwd = directorio de trabajo actual. 
+cp = copiar archivos. 
+touch = crear archivos vacios. 
+ls -l = ver el contenido de un directorio. 
+rm = eliminar archivos, usando estrella se borrarían todos. 
+

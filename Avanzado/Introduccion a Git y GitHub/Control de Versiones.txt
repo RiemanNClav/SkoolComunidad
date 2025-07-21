@@ -1,0 +1,27 @@
+Usar sistema de control de versiones, retornar a errores o colaborar con otros. 
+Manejo de archivos de configuración o el mantenimiento del coódigo fuente de programas y 
+scripts. 
+
+Version Control
+Manejar información de muchos archivos diferentes
+Tener un controld de todo lo que hagas de tu codigo de manera iterativa. 
+La forma mas primitiva de un Control de Versiones: Manteniendo copias historicas, copias que permiten ver como era el proyecto antes y volver a esa versión
+Git nos ayuda a manetener el registro de nuestros cambios, como usarlo para colaborar con otros o revertir cambios.
+
+
+Sistema de Control de Versiones
+Mantiene un historial de los cambios que hemos realizado en nuestros archivos, a traves de ello podemos saber cuando se hicieron los cambios y quien los hizo,
+mantiene un historial de todas las diferentes versiones que creamos al grabar nuestros cambios, editar multiples archivos y tratar esta colección de ediciones como
+un único cambio, sumamente util cuando se restrean archivos de texto. 
+
+
+GIT
+Git es un SCV, git es un sistema libre de codigo abierto disponible para la instalación, git tiene una arquitectura distribuida, cada persona que contribuye a un 
+repositorio tiene una copia completa del repositorio en sus propias maquinas de desarrollo, los colaboradores pueden compartir  e introducir cambios que otros 
+han hecho segun lo necesiten. 
+Puedes usar GIT como cliente para acceder al repositorio desde otra maquina o incluso la misma 
+
+
+para saber si ya tenemos instalado Git, usamos git --version.
+Instalar Git en Linux es muy facil, con el comando apt install git o yum install git. 
+Para interactuar con Git desde interfaces gráficas. 
